@@ -7,12 +7,12 @@ import 'providers/attendance_provider.dart';
 import 'providers/chat_provider.dart';
 import 'providers/statistics_provider.dart';
 import 'screens/login_screen.dart';
-import 'screens/home_screen.dart';
+import 'screens/home_screen.dart' as home;
 import 'screens/dashboard_screen.dart';
 import 'screens/chats_list_screen.dart';
-import 'screens/statistics_screen.dart';
-import 'screens/profile_screen.dart';
-import 'screens/settings_screen.dart';
+import 'screens/statistics_screen.dart' as stats;
+import 'screens/profile_screen.dart' as profile;
+import 'screens/settings_screen.dart' as settings;
 
 // مفتاح عام للتنقل
 final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
@@ -174,11 +174,11 @@ class _MainScreenState extends State<MainScreen> {
   int _currentIndex = 0;
   
   final List<Widget> _screens = [
-    const HomeScreen(),
+    const home.HomeScreen(),
     const ChatsListScreen(),
-    const StatisticsScreen(),
-    const ProfileScreen(),
-    const SettingsScreen(),
+    const stats.StatisticsScreen(),
+    const profile.ProfileScreen(),
+    const settings.SettingsScreen(),
   ];
   
   @override
