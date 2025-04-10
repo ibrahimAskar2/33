@@ -4,8 +4,7 @@ class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
-}
+  State<HomeScreen> createState() => _HomeScreenState(}
 
 class _HomeScreenState extends State<HomeScreen> {
   int _selectedIndex = 0;
@@ -29,8 +28,7 @@ class _HomeScreenState extends State<HomeScreen> {
         onTap: (index) {
           setState(() {
             _selectedIndex = index;
-          });
-        },
+          }},
         selectedItemColor: Theme.of(context).colorScheme.primary,
         unselectedItemColor: Colors.grey,
         items: const [
@@ -56,8 +54,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
-    );
-  }
+    }
 }
 
 // شاشة لوحة المعلومات الرئيسية
@@ -156,14 +153,12 @@ class MainDashboard extends StatelessWidget {
                                     const SnackBar(
                                       content: Text('تم تسجيل الدخول بنجاح'),
                                     ),
-                                  );
-                                },
+                                  },
                                 child: const Text('تأكيد'),
                               ),
                             ],
                           ),
-                        );
-                      },
+                        },
                       icon: const Icon(Icons.login),
                       label: const Text('تسجيل الدخول'),
                       style: ElevatedButton.styleFrom(
@@ -196,14 +191,12 @@ class MainDashboard extends StatelessWidget {
                                     const SnackBar(
                                       content: Text('تم تسجيل الخروج بنجاح'),
                                     ),
-                                  );
-                                },
+                                  },
                                 child: const Text('تأكيد'),
                               ),
                             ],
                           ),
-                        );
-                      },
+                        },
                       icon: const Icon(Icons.logout),
                       label: const Text('تسجيل الخروج'),
                       style: ElevatedButton.styleFrom(
@@ -278,8 +271,7 @@ class MainDashboard extends StatelessWidget {
           ),
         ),
       ),
-    );
-  }
+    }
 
   // دالة لإنشاء بطاقة معلومات
   Widget _buildInfoCard(
@@ -334,8 +326,7 @@ class MainDashboard extends StatelessWidget {
           ],
         ),
       ),
-    );
-  }
+    }
 }
 
 // شاشة قائمة الدردشات
@@ -423,8 +414,7 @@ class ChatsList extends StatelessWidget {
           ),
         ],
       ),
-    );
-  }
+    }
 
   // دالة لإنشاء عنصر دردشة
   Widget _buildChatItem(
@@ -518,8 +508,7 @@ class ChatsList extends StatelessWidget {
       onTap: () {
         // فتح الدردشة
       },
-    );
-  }
+    }
 }
 
 // شاشة الإحصائيات
@@ -661,8 +650,7 @@ class StatisticsScreen extends StatelessWidget {
           ],
         ),
       ),
-    );
-  }
+    }
 
   // دالة لإنشاء شريحة تصفية
   Widget _buildFilterChip(
@@ -679,8 +667,7 @@ class StatisticsScreen extends StatelessWidget {
           // تغيير التصفية
         },
       ),
-    );
-  }
+    }
 
   // دالة لإنشاء عنصر إحصائية
   Widget _buildStatItem(
@@ -706,8 +693,7 @@ class StatisticsScreen extends StatelessWidget {
           ),
         ),
       ],
-    );
-  }
+    }
 }
 
 // شاشة الملف الشخصي
@@ -851,8 +837,7 @@ class ProfileScreen extends StatelessWidget {
           ],
         ),
       ),
-    );
-  }
+    }
 
   // دالة لإنشاء عنصر معلومات الملف الشخصي
   Widget _buildProfileInfoItem({
@@ -888,8 +873,7 @@ class ProfileScreen extends StatelessWidget {
           ),
         ],
       ),
-    );
-  }
+    }
 
   // دالة لإنشاء عنصر إحصائية الدوام
   Widget _buildAttendanceStatItem(
@@ -927,8 +911,7 @@ class ProfileScreen extends StatelessWidget {
           textAlign: TextAlign.center,
         ),
       ],
-    );
-  }
+    }
 }
 
 // شاشة الإعدادات
@@ -936,12 +919,10 @@ class SettingsPageHome extends StatefulWidget {
   const SettingsPageHome({Key? key}) : super(key: key);
 
   @override
-  State<SettingsPageHome> createState() => _SettingsPageHomeState();
-});
+  State<SettingsPageHome> createState() => _SettingsPageHomeState(});
 
   @override
-  State<SettingsPageHome> createState() => _SettingsPageHomeState();
-}
+  State<SettingsPageHome> createState() => _SettingsPageHomeState(}
 
 class _SettingsPageHomeState extends State<SettingsPageHome> {
   bool _darkMode = false;
@@ -973,8 +954,7 @@ class _SettingsPageHomeState extends State<SettingsPageHome> {
             onChanged: (value) {
               setState(() {
                 _darkMode = value;
-              });
-            },
+              }},
           ),
           const Divider(),
           
@@ -1004,8 +984,7 @@ class _SettingsPageHomeState extends State<SettingsPageHome> {
                         setState(() {
                           _language = 'العربية';
                         });
-                        Navigator.pop(context);
-                      },
+                        Navigator.pop(context},
                       child: const Text('العربية'),
                     ),
                     SimpleDialogOption(
@@ -1013,14 +992,12 @@ class _SettingsPageHomeState extends State<SettingsPageHome> {
                         setState(() {
                           _language = 'English';
                         });
-                        Navigator.pop(context);
-                      },
+                        Navigator.pop(context},
                       child: const Text('English'),
                     ),
                   ],
                 ),
-              );
-            },
+              },
           ),
           const Divider(),
           
@@ -1059,14 +1036,12 @@ class _SettingsPageHomeState extends State<SettingsPageHome> {
                     TextButton(
                       onPressed: () {
                         // تسجيل الخروج
-                        Navigator.pop(context);
-                      },
+                        Navigator.pop(context},
                       child: const Text('تأكيد'),
                     ),
                   ],
                 ),
-              );
-            },
+              },
           ),
           const Divider(),
           
@@ -1090,6 +1065,5 @@ class _SettingsPageHomeState extends State<SettingsPageHome> {
           ),
         ],
       ),
-    );
-  }
+    }
 }
