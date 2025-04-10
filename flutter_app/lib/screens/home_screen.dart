@@ -16,7 +16,7 @@ class _HomeScreenState extends State<HomeScreen> {
     const ChatsList(),
     const StatisticsScreen(),
     const ProfileScreen(),
-    const SettingsScreen(),
+    const SettingsPageHome(),
   ];
 
   @override
@@ -932,14 +932,14 @@ class ProfileScreen extends StatelessWidget {
 }
 
 // شاشة الإعدادات
-class SettingsScreen extends StatefulWidget {
+class SettingsPageHome extends StatefulWidget {
   const SettingsScreen({super.key});
 
   @override
-  State<SettingsScreen> createState() => _SettingsScreenState();
+  State<SettingsPageHome> createState() => _SettingsPageHomeState();
 }
 
-class _SettingsScreenState extends State<SettingsScreen> {
+class _SettingsPageHomeState extends State<SettingsPageHome> {
   bool _darkMode = false;
   String _language = 'العربية';
 
