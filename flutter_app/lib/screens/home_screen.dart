@@ -933,7 +933,11 @@ class ProfileScreen extends StatelessWidget {
 
 // شاشة الإعدادات
 class SettingsPageHome extends StatefulWidget {
-  const SettingsScreen({super.key});
+  const SettingsPageHome({Key? key}) : super(key: key);
+
+  @override
+  State<SettingsPageHome> createState() => _SettingsPageHomeState();
+});
 
   @override
   State<SettingsPageHome> createState() => _SettingsPageHomeState();
