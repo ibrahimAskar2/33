@@ -1,0 +1,5 @@
+C:\Users\Administrator\Desktop\BooksApiFull\obj\Debug\net472\BooksApiFull.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\BooksApiFull\obj\Debug\net472\BooksApiFull.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\BooksApiFull\obj\Debug\net472\BooksApiFull.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\BooksApiFull\obj\Debug\net472\BooksApiFull.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\BooksApiFull\obj\Debug\net472\BooksApiFull.csproj.CoreCompileInputs.cache
