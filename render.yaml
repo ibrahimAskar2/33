@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: api33-service
+    env: dotnet
+    repo: https://github.com/ibrahimAskar2/33
+    branch: main
+    buildCommand: dotnet publish -c Release -o ./bin/Release/net8.0/publish
+    startCommand: dotnet Api33.dll
+    publishPath: ./bin/Release/net8.0/publish
+    region: oregon
